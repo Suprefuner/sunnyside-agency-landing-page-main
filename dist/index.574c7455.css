@@ -1,0 +1,54 @@
+@import "https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap";
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*, :before, :after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+:root {
+  --color-primary-red: #fe7867;
+  --color-primary-yellow: #fad400;
+  --color-primary-cyan-desaturated: #25564b;
+  --color-primary-cyan-moderate: #458c7e;
+  --color-primary-blue: #19536b;
+  --color-blue-desaturated: #23303e;
+  --color-blue-grayish-1: #a7abae;
+  --color-blue-grayish-2: #818498;
+  --color-blue-grayish-3: #5a636c;
+  --color-white: #fff;
+  --ff-san-ser: "Barlow", sans-serif;
+  --ff-ser: "Fraunces", serif;
+  --fw-regu: 600;
+  --fw-bold: 700;
+  --fw-ex-bold: 900;
+}
+
+.hero {
+  width: 100%;
+  position: relative;
+}
+
+.hero__bg-img {
+  z-index: -1;
+  position: absolute;
+}
+
+/*# sourceMappingURL=index.574c7455.css.map */

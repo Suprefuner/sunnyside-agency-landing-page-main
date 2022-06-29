@@ -1,0 +1,49 @@
+@use "../abstracts/" as *;
+
+.section__testimonials {
+  padding: 7rem 2rem;
+
+  @include for-desktop {
+    padding-inline: 7rem;
+  }
+
+  .section--heading {
+    color: var(--color-blue-grayish-2);
+    font-size: 1.6rem;
+  }
+}
+
+.testimonial {
+  text-align: center;
+  margin-top: 6rem;
+
+  &__content {
+    opacity: 0.8;
+  }
+
+  &__user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+
+    &--image {
+      width: 7rem;
+      border-radius: 50%;
+    }
+
+    &--job-title {
+      margin-top: 1rem;
+      font-size: 1.3rem;
+      color: var(--color-blue-grayish-2);
+    }
+  }
+}
+
+@include for-desktop {
+  .testimonials {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+  }
+}

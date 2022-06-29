@@ -1,0 +1,79 @@
+@use "../abstracts/" as *;
+
+.description {
+  text-align: center;
+
+  @include for-desktop {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .content {
+    padding: 4rem 2rem;
+
+    @include for-desktop {
+      padding-inline: 7rem;
+
+      text-align: left;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: start;
+    }
+  }
+
+  .text {
+    &--heading {
+      color: var(--color-blue-desaturated);
+      font-weight: var(--fw-ex-bold);
+    }
+
+    &--paragraph {
+      color: var(--color-blue-grayish-2);
+    }
+  }
+
+  .text > * {
+    margin-bottom: 2rem;
+  }
+
+  &__how-we-do {
+    position: relative;
+
+    .text {
+      position: absolute;
+      bottom: 7%;
+      left: 0;
+
+      opacity: 0.75;
+
+      padding-inline: 2rem;
+
+      &--heading {
+        font-size: 3rem;
+      }
+
+      &--paragraph {
+        color: var(--color-blue-desaturated);
+      }
+    }
+  }
+}
+
+@include for-desktop {
+  .row {
+    grid-column: span 2;
+
+    display: flex;
+
+    &:nth-child(even) .image {
+      order: 1;
+    }
+
+    & > * {
+      width: 50%;
+    }
+  }
+}

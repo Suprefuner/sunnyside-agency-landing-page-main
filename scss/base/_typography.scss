@@ -1,0 +1,19 @@
+.section--heading {
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  font-family: var(--ff-ser);
+  text-align: center;
+}
+
+.text {
+  &--heading {
+    font-family: var(--ff-ser);
+  }
+
+  &--paragraph {
+    font-family: var(--ff-san-ser);
+    font-weight: var(--fw-regu);
+    font-size: 1.5rem;
+    line-height: 1.7;
+  }
+}

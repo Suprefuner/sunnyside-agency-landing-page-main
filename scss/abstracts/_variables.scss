@@ -1,0 +1,30 @@
+:root {
+  //////////////////////////////VARIABLES////////////////////////////
+  // COLOR
+  --color-primary-red: hsl(7, 99%, 70%);
+  --color-primary-yellow: hsl(51, 100%, 49%);
+  --color-primary-cyan-desaturated: hsl(167, 40%, 24%);
+  --color-primary-cyan-moderate: hsl(168, 34%, 41%);
+  --color-primary-blue: hsl(198, 62%, 26%);
+
+  --color-blue-desaturated: hsl(212, 27%, 19%);
+  --color-blue-grayish-1: hsl(210, 4%, 67%);
+  --color-blue-grayish-2: hsl(232, 10%, 55%);
+  --color-blue-grayish-3: hsl(213, 9%, 39%);
+  --color-white: hsl(0, 0%, 100%);
+
+  //FONT
+  --ff-san-ser: "Barlow", sans-serif;
+  --ff-ser: "Fraunces", serif;
+
+  --fw-regu: 600;
+  --fw-bold: 700;
+  --fw-ex-bold: 900;
+
+  // CONFIG
+  // GENERAL
+  --border-radius-sm: 2rem;
+
+  // HERO SECTION
+  --burger-meun-space: 0.6rem;
+}
